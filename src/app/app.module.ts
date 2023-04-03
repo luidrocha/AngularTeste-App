@@ -15,12 +15,14 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 import {MatDividerModule} from '@angular/material/divider';
+import { PageDefaltComponent } from './page-defalt/page-defalt.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListaClienteComponent,
-    MainNavComponent
+    MainNavComponent,
+    PageDefaltComponent
   ],
   imports: [
     BrowserModule,

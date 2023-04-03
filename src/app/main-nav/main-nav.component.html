@@ -1,5 +1,12 @@
 <mat-toolbar>
+
+  <button mat-icon-button *ngIf="sidenav.mode==='over'"
+    (click)="sidenav.toggle()">
+    <mat-icon *ngIf="!sidenav.opened"> menu </mat-icon>
+    <mat-icon *ngIf="sidenav.opened"> close </mat-icon>
+  </button>
   Barra de Naevegação Responsiva
+
 </mat-toolbar>
 
 <mat-sidenav-container>
@@ -27,6 +34,10 @@
         <mat-icon>info</mat-icon>
         <span>About</span>
       </button>
+      <button mat-button class="menu-button" routerLink="/cliente">
+        <mat-icon>info</mat-icon>
+        <span>Cliente</span>
+      </button>
 
       <mat-divider></mat-divider>
 
@@ -39,7 +50,9 @@
 
   <mat-sidenav-content >
     <div class="content mat-elevation-z8">
-      Main content
+
+      <router-outlet></router-outlet>
+
     </div>
 
 
