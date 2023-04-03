@@ -1,0 +1,38 @@
+<div class="containe">
+  <div>
+    <h1> Relatorio de Clientes</h1>
+  </div>
+  <!-- Cabeçalho -->
+  <div>
+    <div class="row">
+      <div class="col">
+        <table class="table table-bordered table-hover">
+          <thead>
+            <tr>
+              <th>Id</th>
+              <th>Nome</th>
+              <th>Telefone</th>
+              <th>E-mail</th>
+              <th>Sexo</th>
+              <th>Pais</th>
+              <th>Salario</th>
+              <th>Embarque</th>
+            </tr>
+          </thead>
+        <!-- inicio NGFOR  CONTEUDO -->
+          <tbody *ngFor="let cliente of clientes">
+            <tr>
+              <td>{{cliente.id}}</td>
+              <td>{{cliente.nome}}</td>
+              <td>{{cliente.fone}}</td>
+              <td>{{cliente.email}}</td>
+              <td>{{cliente.sexo}}</td>
+              <td>{{cliente.pais}}</td>
+              <td>{{cliente.salario}}</td>
+              <td>{{cliente.embarque}}</td>
+            </tr>
+          </tbody>
+      </table>
+    </div>
+    <!-- Fim NGFOR -->
+  </div>
