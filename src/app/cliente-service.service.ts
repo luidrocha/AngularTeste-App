@@ -22,6 +22,7 @@ export class ClienteServiceService {
   }
 
   getDate(){
+    // x=x+1
     const timeElapsed = Date.now();
     const today = new Date(timeElapsed);
   }
